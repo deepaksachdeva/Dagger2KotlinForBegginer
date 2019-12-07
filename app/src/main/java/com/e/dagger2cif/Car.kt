@@ -7,16 +7,20 @@ class Car {
 
     private val TAG = Car::class.simpleName
 
-    var engine: Engine? = null
+    @Inject lateinit var engine: Engine
     var wheels: Wheels? = null
 
     @Inject
-    constructor(engine: Engine, wheels: Wheels){
-        this.engine = engine
+    constructor(wheels: Wheels){
         this.wheels = wheels
     }
 
     fun drive(){
         Log.d(TAG, "driving...")
+    }
+
+    @Inject
+    fun enableButton(remote: Remote){
+        remote.setListener()
     }
 }
