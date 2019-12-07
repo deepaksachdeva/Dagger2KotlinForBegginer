@@ -5,7 +5,7 @@ import javax.inject.Inject
 class Wheels {
 
     @Inject
-    constructor(){
+    constructor(rims: Rims, tires: Tires){
 
     }
 }
