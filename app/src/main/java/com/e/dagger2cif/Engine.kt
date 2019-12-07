@@ -4,7 +4,7 @@ import javax.inject.Inject
 
 class Engine {
 
-    @Inject
+//    @Inject
     constructor(){
 
     }

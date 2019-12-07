@@ -4,7 +4,7 @@ import javax.inject.Inject
 
 class Wheels {
 
-    @Inject
+//    @Inject
     constructor(){
 
     }

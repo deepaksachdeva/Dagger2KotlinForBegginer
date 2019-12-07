@@ -10,10 +10,15 @@ class Car {
     var engine: Engine? = null
     var wheels: Wheels? = null
 
+//    @Inject
+//    constructor(engine: Engine, wheels: Wheels){
+//        this.engine = engine
+//        this.wheels = wheels
+//    }
+
     @Inject
-    constructor(engine: Engine, wheels: Wheels){
-        this.engine = engine
-        this.wheels = wheels
+    constructor(){
+
     }
 
     fun drive(){
