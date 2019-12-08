@@ -1,11 +1,6 @@
 package com.e.dagger2cif
 
-import javax.inject.Inject
+interface Engine {
 
-class Engine {
-
-    @Inject
-    constructor(){
-
-    }
+    fun start()
 }
