@@ -7,8 +7,14 @@ import javax.inject.Inject
 @Module
 class DieselEngineModule {
 
+    var horsePower: Int? = null
+
+    constructor(horsePower: Int){
+        this.horsePower = horsePower
+    }
+
     @Provides
-    fun provideEngine(engine: DieselEngine): Engine{
-        return engine
+    fun provideEngine(): Engine{
+        return DieselEngine(horsePower!!)
     }
 }

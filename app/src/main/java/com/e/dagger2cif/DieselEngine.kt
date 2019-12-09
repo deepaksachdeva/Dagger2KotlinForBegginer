@@ -7,12 +7,13 @@ class DieselEngine :Engine {
 
     private val TAG = DieselEngine::class.simpleName
 
-    @Inject
-    constructor(){
+    var horsePower: Int? = null
 
+    constructor(horsePower: Int){
+        this.horsePower = horsePower
     }
 
     override fun start() {
-        Log.d(TAG, "Diesel Engine Started...")
+        Log.d(TAG, "Diesel Engine Started...horsepower: "+horsePower)
     }
 }
